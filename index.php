@@ -91,7 +91,7 @@ tbody tr:nth-child(even){
 <!-- modifiable -->
     <h1>bibligeo</h1>
     <p>
-        Ce site est un proger de sit web pour la snt j'ai choisis de creer un sit pour heberger un de mes scripte python qui propose des oultis pour fair de la geometris dans un reper hortonormer
+        Ce site est un projet de site web pour la SNT. J'ai choisi de creer un site pour heberger un de mes scripts Python, qui propose des outils pour faire de la geometrie dans un repere orthonorme
     </p>
 
     <h1>Telecharger</h1>
@@ -144,7 +144,7 @@ tbody tr:nth-child(even){
   			}
   			else {
   				btn.value = 'code source de la bibliotheque';
-    			txt.textContent = 'http://192.168.1.15/html.txt';
+    			txt.textContent = 'https://github.com/cartoone222/proget_bibligeo/blob/main/index.php';
     			value_text = 0;
   			}
 		}
