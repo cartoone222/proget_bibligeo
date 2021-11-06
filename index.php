@@ -150,7 +150,7 @@ tbody tr:nth-child(even){
 		}
 
 		function updatebtn_2(){
-			window.open('http://192.168.1.15/bibligeo.py', '_blank');
+			window.open('http://83.199.28.8/bibligeo.py', '_blank');
 		}
     </script>
 
