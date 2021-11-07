@@ -1,0 +1,138 @@
+body {background-color: #fffcd2;}
+
+.menu{background-color: #408cff;
+      margin: -10px;
+      border: 0.5rem solid #408cff;}
+
+.menu h1{
+      color: #ffffff;
+  	  text-align: center;
+  		font-size: 5rem;}
+
+.code p{
+	border: solid;
+	border-radius: 30px;
+	padding: 10px;
+	background-color: white;
+	font: 1.5em "Consolas";
+}
+
+input{
+	margin:	10px;
+}
+
+h1{
+	font: 2em "arial black";
+	font-size: 3em;
+}
+
+p{
+	font: 1em "arial";
+	margin:	10px;
+	font-size: 1.5em;
+	text-align: justify;
+}
+
+.table{
+	background-color: black;
+
+	border-collapse: collapse;
+	min-width: 400px;
+	width: auto;
+	box-shadow: 0 5px 25px rgba(0,0,0);
+	cursor: pointer;
+	margin: 50px auto;
+	border: 2px solid black;
+	margin-right: 55.5%;
+}
+
+tr{
+	background-color: white;
+}
+
+thead tr{
+	background-color: gray;
+	color: white;
+	text-align: left;
+}
+
+th, td{
+	padding: 15px 20px;
+}
+
+tbody tr, td, th{
+	border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even){
+	background-color: #f3f3f3;
+}
+
+.corpe{
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+
+.speimp{
+	margin-left: 50%;
+}
+
+input{
+	font-size: 1.5em;
+	font: 1em "arial";
+}
+
+.pspe{
+
+	margin-right: 25%;
+}
+
+img
+{
+    position:absolute;
+    left:45%;
+    top:550px;
+    height: 400px;
+    width: auto;
+}
+
+h2{
+	font: 2em "arial black";
+	font-size: 2.5em;
+	margin-left: 25px;
+}
+
+#circle {
+    width: 175px;
+    height: 175px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+
+    background: #0d2068;
+
+    position:absolute;
+
+    left:27%;
+    top:25px;
+}
+
+.spetext_1 , .spetext_2{
+	font: 8em "arial black";
+	color:white;
+}
+
+.spetext_1{
+	position:absolute;
+
+	left:5%;
+	top:-20%;
+}
+
+.spetext_2{
+	position:absolute;
+
+	left:30%;
+	top:5%;
+}
