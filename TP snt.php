@@ -10,15 +10,10 @@
 
 <!-- le html -->
 
+<img src='https://raw.githubusercontent.com/cartoone222/proget_bibligeo/main/Untitled.png' id="logo">
+
 <div class='menu'>
    <h1 id="h1">Bibligeo</h1>
-</div>
-
-
-
-<div id="circle">
-  <p class="spetext_1">B</p>
-  <p class="spetext_2">G</p> 
 </div>
 
 </head>
@@ -31,10 +26,10 @@
     <h1>Presentation</h1>
     <p class='pspe'>
         Ce site est un projet de site web pour la SNT. J'ai choisi de créer un site pour héberger un de mes scripts Python, qui propose des outils pour faire de la géometrie dans un repère orthonormé. Cet oulti a été optimisé
-		et conçu pour tourner sur numworks n0110. Une documentation est en cours d'écriture si vous souhaitez me contacter passez par github pseudo : "cartoone222". Bonne utilisation ! 
+		et conçu pour tourner sur numworks n0110. Une documentation est en cours d'écriture si vous souhaitez me contacter passez par github pseudo : "cartoone222". Bonne utilisation !
     </p>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Numworks_calculator.png">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Numworks_calculator.png" id="calculatrice">
 
     <h1>Telecharger</h1>
 
@@ -56,6 +51,28 @@
    		</tr>
    	</table>
     </div>
+
+    <?php
+      session_start();
+      if(file_exists('compteur_visites.txt'))
+      {
+        $compteur_f = fopen('compteur_visites.txt', 'r+');
+        $compte = fgets($compteur_f);
+      }
+      else
+      {
+        $compteur_f = fopen('compteur_visites.txt', 'a+');
+        $compte = 0;
+      }
+      if(!isset($_SESSION['compteur_de_visite']))
+      {
+        $_SESSION['compteur_de_visite'] = 'visite';
+        $compte++;
+        fseek($compteur_f, 0);
+        fputs($compteur_f, $compte);
+      }
+      fclose($compteur_f);
+      echo "<strong> $compte </strong> visites !!!";?>
 
     <h1>Code source</h1>
 
@@ -115,5 +132,5 @@ function updatebtn_2(){
 
 </body>
 
-<!-- fin du html -->	
+<!-- fin du html -->
 </html>
