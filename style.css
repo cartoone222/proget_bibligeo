@@ -6,8 +6,10 @@ body {background-color: #fffcd2;}
 
 .menu h1{
       color: #ffffff;
-  	  text-align: center;
-  		font-size: 5rem;}
+  	  text-align: left;
+  		font-size: 5rem;
+      margin-left: 25%;
+}
 
 .code p{
 	border: solid;
@@ -88,7 +90,7 @@ input{
 	margin-right: 25%;
 }
 
-img
+#calculatrice
 {
     position:absolute;
     left:45%;
@@ -97,42 +99,16 @@ img
     width: auto;
 }
 
+#logo
+{
+    position: absolute;
+    height: 200px;
+    top:25px;
+    left:5%;
+}
+
 h2{
 	font: 2em "arial black";
 	font-size: 2.5em;
 	margin-left: 25px;
-}
-
-#circle {
-    width: 175px;
-    height: 175px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
-
-    background: #0d2068;
-
-    position:absolute;
-
-    left:27%;
-    top:25px;
-}
-
-.spetext_1 , .spetext_2{
-	font: 8em "arial black";
-	color:white;
-}
-
-.spetext_1{
-	position:absolute;
-
-	left:5%;
-	top:-20%;
-}
-
-.spetext_2{
-	position:absolute;
-
-	left:30%;
-	top:5%;
 }
