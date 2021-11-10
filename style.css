@@ -1,17 +1,118 @@
-body {background-color: #fffcd2;}
-
-.menu{background-color: #408cff;
-      margin: -10px;
-      border: 0.5rem solid #408cff;}
-
-.menu h1{
-      color: #ffffff;
-  	  text-align: left;
-  		font-size: 5rem;
-      margin-left: 25%;
+body
+{
+      background-color: #fffcd2;
 }
 
-.code p{
+body h1
+{
+      font: 2em "arial black";
+      font-size: 3em;
+}
+
+body p
+{
+      font: 1em "arial";
+      margin:	10px;
+      font-size: 1.5em;
+      text-align: justify;
+}
+
+body input
+{
+	   font-size: 1.5em;
+	   font: 1em "arial";
+}
+
+body h2
+{
+	   font: 2em "arial black";
+	   font-size: 2.5em;
+	   margin-left: 25px;
+}
+
+.corpe
+{
+	margin-right: 20%;
+	margin-left: 10%;
+	margin-top: 50px;
+}
+
+.menu
+{
+      background-color: #408cff;
+      margin:-20px;
+      border: 0.5rem solid #408cff;
+}
+
+.menu h1
+{
+      color: #ffffff;
+      text-align: center;
+      font-size: 5rem;
+}
+
+.menu #logo
+{
+      position: absolute;
+      height: 200px;
+      top: 1%;
+      left: 5%;
+      z-index: 10;
+}
+
+.image_principal #calculatrice
+{
+      position: absolute;
+      left:53%;
+      top:20%;
+      height: 800px;
+      width: auto;
+}
+
+.instal .table
+{
+      background-color: black;
+      border-collapse: collapse;
+      width:670px;
+      box-shadow: 0 5px 25px black;
+      margin: 50px;
+      border: 2px solid black;
+}
+
+.table tr
+{
+      background-color: white;
+}
+
+.table thead tr
+{
+      background-color: gray;
+      color: white;
+      text-align: left;
+}
+
+.table th, td
+{
+      padding: 15px 20px;
+}
+
+.table tbody tr, td, th
+{
+      border: 1px solid black;
+}
+
+.table tbody tr:nth-child(even)
+{
+      background-color: #f3f3f3;
+}
+
+.table input
+{
+      margin:10px
+}
+
+.code p
+{
 	border: solid;
 	border-radius: 30px;
 	padding: 10px;
@@ -19,96 +120,30 @@ body {background-color: #fffcd2;}
 	font: 1.5em "Consolas";
 }
 
-input{
-	margin:	10px;
-}
-
-h1{
-	font: 2em "arial black";
-	font-size: 3em;
-}
-
-p{
-	font: 1em "arial";
-	margin:	10px;
-	font-size: 1.5em;
-	text-align: justify;
-}
-
-.table{
-	background-color: black;
-
-	border-collapse: collapse;
-	min-width: 400px;
-	width: auto;
-	box-shadow: 0 5px 25px rgba(0,0,0);
-	cursor: pointer;
-	margin: 50px auto;
-	border: 2px solid black;
-	margin-right: 55.5%;
-}
-
-tr{
-	background-color: white;
-}
-
-thead tr{
-	background-color: gray;
-	color: white;
-	text-align: left;
-}
-
-th, td{
-	padding: 15px 20px;
-}
-
-tbody tr, td, th{
-	border: 1px solid #ddd;
-}
-
-tbody tr:nth-child(even){
-	background-color: #f3f3f3;
-}
-
-.corpe{
-	margin-right: 10%;
-	margin-left: 10%;
-	margin-top: 50px;
-}
-
-.speimp{
+.source_code .speimp
+{
 	margin-left: 50%;
 }
 
-input{
-	font-size: 1.5em;
-	font: 1em "arial";
-}
-
 .pspe{
-
-	margin-right: 25%;
+	margin-right: 35%;
 }
 
-#calculatrice
-{
-    position:absolute;
-    left:45%;
-    top:550px;
-    height: 400px;
-    width: auto;
+.spetext_1 , .spetext_2{
+	font: 8em "arial black";
+	color:white;
 }
 
-#logo
-{
-    position: absolute;
-    height: 200px;
-    top:25px;
-    left:5%;
+.spetext_1{
+	position:absolute;
+
+	left:5%;
+	top:-20%;
 }
 
-h2{
-	font: 2em "arial black";
-	font-size: 2.5em;
-	margin-left: 25px;
+.spetext_2{
+	position:absolute;
+
+	left:30%;
+	top:5%;
 }
