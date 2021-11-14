@@ -5,8 +5,7 @@ body
 
 body h1
 {
-      font: 2em "arial black";
-      font-size: 3em;
+      font: 3em "arial black";
 }
 
 body p
@@ -30,10 +29,45 @@ body h2
 	   margin-left: 25px;
 }
 
+.left-menu
+{
+      border-radius: 10px;
+      border: 2px solid black;
+      background-color: white;
+      position: absolute;
+      top:30%;
+      left:2.5%;
+      width: 15%;
+      position: fixed;
+}
+
+.left-menu h1
+{
+      text-align: center;
+      font-size: 2em;
+}
+
+.left-menu h2
+{
+      font-size: 1em;
+}
+
+.left-menu p
+{
+      font: 0.75em "arial";
+      margin-left: 40px
+}
+
+.left-menu a
+{
+      text-decoration: none;
+      color: #408cff;
+}
+
 .corpe
 {
-	margin-right: 20%;
-	margin-left: 10%;
+	margin-right: 10%;
+	margin-left: 20%;
 	margin-top: 50px;
 }
 
@@ -63,7 +97,7 @@ body h2
 .image_principal #calculatrice
 {
       position: absolute;
-      left:53%;
+      left:60%;
       top:20%;
       height: 800px;
       width: auto;
