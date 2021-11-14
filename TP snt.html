@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html id='html'>
   <head>
     <meta charset="utf-8" />
+    <meta lang="fr" />
       <title>TP snt</title>
       <link href="style.css" rel="stylesheet" type="text/css">
 <!-- menu -->
-      <div class='menu'>
+      <div class='menu' id="top">
         <img src='https://raw.githubusercontent.com/cartoone222/proget_bibligeo/main/Untitled.png' id="logo">
         <h1 id="h1">Bibligeo</h1>
       </div>
@@ -13,9 +14,21 @@
   </head>
 
   <body>
+
+     <div class='left-menu' id='menu'>
+          <h1>menu</h1>
+          <h2>navigation</h2>
+          <p><a href="#top">Top</a></p>
+          <p><a href="#ancre_1">Presentation</a></p>
+          <p><a href="#ancre_2">Telecharger</a></p>
+          <p><a href="#ancre_3">Code source</a></p>
+          <p><a href="#ancre_4">Documentation</a></p>
+          <br>
+     </div>
+
 	   <div class='corpe'>
 
-       <div class='persentation'>
+       <div class='persentation' id="ancre_1">
          <h1>Presentation</h1>
          <p class='pspe'>
            Ce site est un projet de site web pour la SNT. J'ai choisi de créer un site pour héberger un de mes scripts Python, qui propose des outils pour faire de la géometrie dans un repère orthonormé. Cet oulti a été optimisé et conçu pour tourner sur numworks n0110. Une documentation est en cours d'écriture si vous souhaitez me contacter passez par github pseudo : "cartoone222". Bonne utilisation !
@@ -26,7 +39,7 @@
          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Numworks_calculator.png" id="calculatrice">
        </div>
 
-       <div class='instal'>
+       <div class='instal' id="ancre_2">
          <h1>Telecharger</h1>
 
          <div class='table'>
@@ -49,7 +62,7 @@
          </div>
        </div>
 
-       <div class='source_code'>
+       <div class='source_code' id="ancre_3">
 
          <h1>Code source</h1>
 
@@ -60,52 +73,49 @@
 
        </div>
 
-       <div class='doc'>
+       <div class='doc' id="ancre_4">
          <h1>Documentation</h1>
 
          <table>
-           <tr><h2>1. La class point()</h2></tr>
-           <tr><h2>2. la class triangle()</h2></tr>
+           <tr><p>1. La class point()</p></tr>
+           <tr><p>2. la class triangle()</p></tr>
          </table>
-
          <br>
          <br>
-         <p>en cours d'écriture</p>
+         <h2 id='ancre_point'>point()</h2>
+         <p>la classe point permet de creer des point </p>
        </div>
 
-<script type="text/javascript">
+       <script type="text/javascript">
 
-var btn = document.getElementById('buttone_1');
-var txt = document.getElementById('text a modifier');
-var lien = document.getElementById('lien');
-var btn_1 = document.getElementById('buttone_telecharger_1');
-let value_text = 1;
+        var btn = document.getElementById('buttone_1');
+        var txt = document.getElementById('text a modifier');
+        var lien = document.getElementById('lien');
+        var btn_1 = document.getElementById('buttone_telecharger_1');
+        let value_text = 1;
 
-btn.addEventListener('click', updateBtn)
-btn_1.addEventListener('click', updatebtn_2)
+        btn.addEventListener('click', updateBtn);
+        btn_1.addEventListener('click', updatebtn_2);
 
-function updateBtn() {
-	if (value_text === 0) {
-		btn.value = 'code source du site';
- 		txt.textContent = 'https://github.com/cartoone222/proget_bibligeo/blob/main/bibligeo.py';
-   	value_text = 1;
-	}
-	else {
-		btn.value = 'code source de la bibliotheque';
-		txt.textContent = 'https://github.com/cartoone222/proget_bibligeo/blob/main/index.php';
-  	value_text = 0;
-	}
-}
+        function updateBtn() {
+	         if (value_text === 0) {
+		           btn.value = 'code source du site';
+ 		           txt.textContent = 'https://github.com/cartoone222/proget_bibligeo/blob/main/bibligeo.py';
+   	           value_text = 1;
+	         }
+	         else {
+		           btn.value = 'code source de la bibliotheque';
+		           txt.textContent = 'https://github.com/cartoone222/proget_bibligeo/blob/main/index.php';
+  	           value_text = 0;
+	         }
+        }
 
-function updatebtn_2(){
-  window.open('http://83.199.28.8/bibligeo.py', '_blank');
-}
-
-</script>
+        function updatebtn_2(){
+          window.open('http://83.199.28.8/bibligeo.py', '_blank');
+        }
+       </script>
 
 <!-- fin du modifiable -->
-
-</body>
-
+  </body>
 <!-- fin du html -->
 </html>
